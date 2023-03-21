@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  img {
+    object-fit: cover;
+    max-width: 100%;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+.Nav{
+    background-color: black;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.Nav-container{
+
+}
+.Nav-elements{
+    display: flex;
+    gap: 2rem;
+}
+.Nav-link{
+    color: rgb(192, 192, 192);
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+.Nav-active{
+    color: white;
+    text-decoration: underline;
+}
+.Nav-log{
+
+}
+.Nav-span{
+    color: greenyellow;
+    font-weight: bolder;
+}
+.Nav-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.Nav-button{
+    background-color: red;
+    padding: .5rem;
+    color: white;
+    border-style:none;
+    cursor: pointer;
+    border-radius: .3125rem;
+}
