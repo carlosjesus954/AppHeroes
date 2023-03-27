@@ -59,3 +59,69 @@
     cursor: pointer;
     border-radius: .3125rem;
 }
+.Login{
+  background-color: rgb(88, 86, 86);
+  width: 50%;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  text-align: center;
+}
+.Login-h1{
+  color: white;
+  margin-bottom: 2rem;
+}
+.Login-btn{
+  background-color: white;
+  padding: 1rem;
+  border-style: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.Cards-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  
+}
+.Cards-h1{
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.Cards-hero{
+  max-width: 16rem;
+  border-radius: 10px;
+  background-color: rgb(48, 43, 43);
+}
+.Cards-img{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.Cards-text{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  
+}
+.Cards-title{
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+}
+.Cards-p{
+  color: rgb(160, 160, 160);
+}
+.Cards-links{
+  margin-bottom: 1rem;
+  color: red;
+}
+@media (max-width: 720px) {
+  .Nav-link{
+    font-size: 0.9rem;
+  }
+}
