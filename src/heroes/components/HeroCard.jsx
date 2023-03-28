@@ -13,10 +13,10 @@ export const HeroCard = ({
     const heroImageUrl = `/src/assets/${id}.jpg`
     // const charactersByHero = <p>{ characters }</p>
   return (
-    <div className="Cards-hero">
+    <div className="Cards-hero animate__animated animate__fadeInDown">
         <img src={heroImageUrl} alt={superhero} className="Cards-img" />
         <div className="Cards-text">
-            <h2 className="Cards-title">{superhero}</h2>
+            <h2 className="Cards-title ">{superhero}</h2>
             <p className="Cards-p">{alter_ego}</p>
             {/* {
                 (alter_ego !== characters) && charactersByHero
