@@ -1,4 +1,5 @@
 import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { Search } from '../../heroes/pages/Search';
 
 export const NavBar = () => {
     const navigate = useNavigate();
@@ -39,6 +40,12 @@ export const NavBar = () => {
                         to="/dc"
                     >
                         DC
+                    </NavLink>
+                    <NavLink 
+                        className={({isActive}) => `Nav-link ${isActive ? "Nav-active" : ""}`} 
+                        to="/search"
+                    >
+                        Search
                     </NavLink>
                     
                 </div>
