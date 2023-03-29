@@ -226,6 +226,7 @@ color: rgb(216, 215, 215);
 .Search-card{
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   gap: 1rem;
 }
 @media (max-width: 720px) {
