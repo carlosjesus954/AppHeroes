@@ -9,8 +9,9 @@ export const NavBar = () => {
         navigate('/login', {
             replace: true
         });
+        logout()
     };
-    const {user}=useContext( AuthContext )
+    const {user, logout}=useContext( AuthContext )
     // Agregar un listener para el evento "popstate"
     window.addEventListener('popstate', () => {
         navigate('/login', {
