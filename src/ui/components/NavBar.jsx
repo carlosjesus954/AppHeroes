@@ -1,5 +1,6 @@
+import { useContext } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
-import { Search } from '../../heroes/pages/Search';
+import { AuthContext } from '../../auth';
 
 export const NavBar = () => {
     const navigate = useNavigate();
@@ -9,7 +10,7 @@ export const NavBar = () => {
             replace: true
         });
     };
-
+    const {user}=useContext( AuthContext )
     // Agregar un listener para el evento "popstate"
     window.addEventListener('popstate', () => {
         navigate('/login', {
@@ -53,7 +54,7 @@ export const NavBar = () => {
 
             <div className="Nav-log">
                 <ul className="Nav-ul">
-                    <span className="Nav-span">Carlos</span>
+                    <span className="Nav-span">{user}</span>
                     <button className='Nav-button' onClick={onLogout}  >LogOut</button>
                 </ul>
             </div>

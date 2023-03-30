@@ -1,11 +1,11 @@
-import { AppRouter } from "./router/AppRouter"
-import { NavBar } from "./ui/components/NavBar"
+import { AuthProvider } from "./auth";
+import { AppRouter } from "./router/AppRouter";
+
 
 export const HeroesApp = () => {
   return (
-    <>
-    
-      <AppRouter/>
-    </>
-  )
-}
+    <AuthProvider>
+      <AppRouter />
+    </AuthProvider>
+  );
+};
