@@ -21,13 +21,6 @@ export const NavBar = () => {
 
     return (
         <nav className="Nav">
-            <Link 
-                className="Nav-link" 
-                to="/"
-            >
-                Asociaciones
-            </Link>
-
             <div className="Nav-container">
                 <div className="Nav-elements">
                     <NavLink 
